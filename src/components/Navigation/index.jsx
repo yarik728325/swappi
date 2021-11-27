@@ -1,17 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./style.scss";
 
 const Navigation = ()=>{
   return(
-    <header>
-         <nav >
+  <header>
+    <nav >
       <ul className="navigation" >
-        <li><Link to="/" >Home</Link></li>
-        <li><Link to='/playlist'>PlayList</Link></li>
+        <li><NavLink to="/" >Home</NavLink></li>
+        <li><NavLink to='/deteil'>Deteils</NavLink></li>
       </ul>
     </nav>
-    </header>
+  </header>
   )
 }
 
