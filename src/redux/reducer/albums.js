@@ -11,6 +11,9 @@ export const check = createSlice({
     correctItem:null
   },
   reducers:{
+    addSome(state){
+      state.tmp++;
+    },
     startRequest(state){
       state.loading = true
     },
@@ -23,4 +26,4 @@ export const check = createSlice({
 
 export default check.reducer;
 
-export const { startRequest,endRequest} = check.actions;
+export const { startRequest,endRequest,addSome} = check.actions;
