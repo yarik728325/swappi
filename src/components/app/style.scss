@@ -1,0 +1,21 @@
+.main_wrapper {
+  height: 100vh;
+  padding-top: 80px;
+  background: url("./background/Backplate.png");
+  display: table;
+  width: 100%;
+  background-size: cover, cover, cover;
+  background-position: left center, right center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+header {
+  width: 100%;
+  background: black;
+  padding-top: 10px;
+  height: 88px;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+}

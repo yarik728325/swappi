@@ -4,26 +4,42 @@ import { createSlice } from "@reduxjs/toolkit";
 export const check = createSlice({
   name:"toolkit",
   initialState:{
-    tmp:0,
-    PlayList:null,
+    count:null,
     loading:false,
-    erro:false,
-    correctItem:null
+    currentPage:1,
+    data:[],
+    search:'',
+    oneItem:{}
   },
   reducers:{
-    addSome(state){
-      state.tmp++;
-    },
     startRequest(state){
       state.loading = true
     },
-    endRequest(state,actions){
+    endRequest(state,{payload}){
       state.loading = false
-      state.PlayList = actions.payload
+      state.count  = payload.count
+      state.data = payload.dataPeople
     },
+    changePage(state,{payload}){
+      state.currentPage = payload
+    },
+    changeSearch(state,{payload}){
+      state.currentPage = 1
+      state.search = payload
+    },
+    chaneOneItem(state,{payload}){
+      state.oneItem = payload
+    }
   }
 })
 
 export default check.reducer;
 
-export const { startRequest,endRequest,addSome} = check.actions;
+export const { 
+  startRequest,
+  endRequest,
+  addSome,
+  changePage,
+  changeSearch,
+  chaneOneItem
+} = check.actions;

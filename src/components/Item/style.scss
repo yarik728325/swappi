@@ -1,0 +1,67 @@
+.styled {
+  position: relative;
+  border-radius: 30px;
+  &:hover {
+    .styled__name {
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+    }
+    .hover {
+      opacity: 1;
+      visibility: visible;
+      background: rgba(0, 0, 0, 0.7);
+      transition: 0.3s;
+      color: red;
+    }
+  }
+  &__name,
+  div.hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 30px;
+    color: black;
+    text-shadow: 4px 4px 11px rgba(248, 0, 0, 0.57);
+    font-size: 32px;
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+    padding-top: 50px;
+  }
+  &__name {
+    opacity: 1;
+    visibility: visible;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 30px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.other {
+  margin: 10px;
+}
+.first {
+  margin: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+@media screen and (max-width: 428px) {
+  .styled {
+    &__name,
+    div.hover {
+      font-size: 22px;
+      padding-top: 30px;
+    }
+  }
+}

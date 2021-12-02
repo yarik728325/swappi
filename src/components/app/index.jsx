@@ -9,7 +9,7 @@ const App =  ()=>{
       <header>
         <Navigation/>
       </header>
-      <main>
+      <main className="main_wrapper">
        <Routing/>
       </main>
     </>
