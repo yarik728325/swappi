@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/swappi/static/css/main.9d52ed53.chunk.css",
+    "main.js": "/swappi/static/js/main.cb340d66.chunk.js",
+    "main.js.map": "/swappi/static/js/main.cb340d66.chunk.js.map",
+    "runtime-main.js": "/swappi/static/js/runtime-main.f983fdd2.js",
+    "runtime-main.js.map": "/swappi/static/js/runtime-main.f983fdd2.js.map",
+    "static/js/2.3be42493.chunk.js": "/swappi/static/js/2.3be42493.chunk.js",
+    "static/js/2.3be42493.chunk.js.map": "/swappi/static/js/2.3be42493.chunk.js.map",
+    "index.html": "/swappi/index.html",
+    "static/css/main.9d52ed53.chunk.css.map": "/swappi/static/css/main.9d52ed53.chunk.css.map",
+    "static/js/2.3be42493.chunk.js.LICENSE.txt": "/swappi/static/js/2.3be42493.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/swappi/static/media/Backplate.125e9b54.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f983fdd2.js",
+    "static/js/2.3be42493.chunk.js",
+    "static/css/main.9d52ed53.chunk.css",
+    "static/js/main.cb340d66.chunk.js"
+  ]
+}
