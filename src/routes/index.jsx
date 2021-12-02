@@ -7,6 +7,7 @@ import DeteilItem from "../pages/DeteilsItem";
 const Routing = () =>{
   return(
     <Routes>
+      <Route path="/swappi"  element={<Home/>} />
       <Route path="/"  element={<Home/>} />
       <Route path="*" element={<NotFound/>} />
       <Route path='/character/:id' element={<DeteilItem/>} />

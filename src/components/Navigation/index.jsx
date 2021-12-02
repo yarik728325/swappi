@@ -7,7 +7,7 @@ const Navigation = ()=>{
   <header>
     <nav >
       <ul className="navigation" >
-        <li><NavLink to="/" >Home</NavLink></li>
+        <li><NavLink to="/swappi" >Home</NavLink></li>
       </ul>
     </nav>
   </header>
